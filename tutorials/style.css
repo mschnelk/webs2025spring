@@ -1,0 +1,152 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    color: #484c55;
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+section
+{
+    margin-block: 50px;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1
+{
+    font-size: 4rem;
+    text-align: center;
+    line-height: 1.1;
+
+    @media (width > 750px)
+    {
+        font-size: 7.5rem;
+    }
+}
+
+h2
+{
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+h3
+{
+    font-size: 1rem;
+}
+
+a
+{
+    color: #2b930b;
+}
+a:hover,
+a:focus-visible
+{
+    color: #4ba92a;
+}
+
+img
+{
+    display: block;
+    max-inline-size: 100%;
+}
+
+.title-emphasis
+{
+    color: #087997;
+}
+
+.orange-heading
+{
+    color: #cd721c;
+}
+
+.blue-heading
+{
+    color:#087997;
+}
+
+.small-heading
+{
+    font-size: 1rem;
+}
+
+.callout-box
+{
+    background-color: #087997;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1%;
+    border-width: medium;
+    border-style: solid;
+    border-color: #0b4a5b;
+}
+
+.climber-bg
+{
+    border-width: medium;
+    border-style: solid;
+    border-color: #6780d2;
+    background-image: url("images/simple-steps.jpg");
+    background-position: bottom-right;
+    background-size: cover;
+    color: #ffffff;
+    padding: 25px;
+}
+
+.primary-navigation ul
+{
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    a
+    {
+        color: #484c55;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    a:hover,
+    a:focus-visible{
+        color: #252629;
+    }
+   
+}
+
+.wrapper
+{
+    inline-size: 80%;
+    max-inline-size: 1000px;
+    margin-inline: auto;   
+}
+
+    .two-column-layout
+    {
+        display: grid;
+        gap: 10%;
+        @media (width > 750px)
+        {
+            grid-template-columns: 1fr 1fr;   
+        }
+    }
+
+footer
+{
+    background-color: #087997;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1%;
+    border-width: medium;
+    border-style: solid;
+    border-color: #0b4a5b;
+}
