@@ -111,7 +111,7 @@ a:focus-visible
 }
 
 /* LAYOUT */
-.three-columns-spanned
+.three-columns
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -126,4 +126,15 @@ a:focus-visible
 .vertical-flip
 {
     transform:rotate(180deg);
+}
+
+/* FOOTER */
+footer
+{
+    background-color: #c5a599;
+}
+
+.logo
+{
+    width: 20px;
 }
