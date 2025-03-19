@@ -31,3 +31,9 @@ So far, I have added all the elements for the homepage, without any styling. I t
 
 <img src = "https://github.com/user-attachments/assets/02983505-bec1-4eb3-9c68-5e2cc165a5e8" width = 69%>
 <img src = "https://github.com/user-attachments/assets/c70b5598-931d-451c-968b-4a995ce508fd" width = 29%>
+
+### March 19, 2025 (in class)
+During time in studio today, I had a chance to work on the CSS for my homepage. The CSS itself was suprisingly pretty minimal effort. The navigation was very similar to the one in Kevin Powell's tutorial, so I didn't have any issues with that, or will the grid layout (which was also almost exactly the same to the tutorial). The only thing that differed, was the imported fonts, which I was able to look up easily, so hopefully that's working correctly. I ended up with this, which I think looks great and a lot like my original design. 
+![image](https://github.com/user-attachments/assets/e1a39471-ccc4-4f24-9145-3927e0da02a4)
+
+
