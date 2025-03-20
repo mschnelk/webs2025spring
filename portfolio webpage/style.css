@@ -96,7 +96,7 @@ p
 .primary-navigation a:hover,
 a:focus-visible
 {
-    color: #484c55;
+    color: #3e3e3b;
 }
 
 .primary-navigation .red-link
@@ -110,16 +110,16 @@ a:focus-visible
     color: #cc6f61;
 }
 
+.full-width
+{
+    width: 100%;
+}
+
 /* LAYOUT */
 .three-columns
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-}
-
-.column-image
-{
-    width: 100%;
 }
 
 /* TRANSFORMATIONS */
@@ -129,12 +129,217 @@ a:focus-visible
 }
 
 /* FOOTER */
+/* BASIC FORMATTING */
 footer
 {
     background-color: #c5a599;
+    background-image: url("images/plaid-corner.png");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-.logo
+/* NAVIGATION FORMATTING */
+.footer-navigation
 {
-    width: 20px;
+    align-self: start;
 }
+
+.footer-navigation ul
+{
+    list-style-type: none;
+}
+
+.footer-navigation a
+{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.25rem;
+}
+
+.footer-navigation a:hover,
+a:focus-visible
+{
+    color: #3e3e3b;
+}
+
+.footer-navigation .main-link
+{
+    font-size: 1.5rem;
+}
+
+a:hover,
+a:focus-visible
+{
+    color: #3e3e3b;
+}
+
+/* BOX FORMATTING */
+.flower-box
+{
+
+    img
+    {
+        width: 100%;
+    }
+
+    .logo-group
+    {
+        position: relative;
+        left: 15px;
+        top: 40px;
+    }
+
+    .logo
+    {
+        width: 23px;
+        margin-bottom: 7px;
+    }
+}
+
+.drawn-star-box
+{
+    justify-self: end;
+    align-self: center;
+    width: 40%;
+    margin-right: 20%;
+}
+
+.drawn-text-box
+{
+    justify-items: start;
+    width:30%;
+}
+
+.booking-box
+{
+    align-self: start;
+    justify-self: start;
+    transform: rotate(13deg);
+    .booking-text
+    {
+        padding-top: 5%;
+    }
+    a
+    {
+        text-decoration: none;
+        color: #e7eff2;
+        text-align: center;
+    }
+    a:hover,
+    a:focus-visible
+    {
+        color: #cbccce; 
+    }
+    img
+    {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+.studio-box
+{
+    position: relative;
+    align-items: center;
+    .receipt-text
+    {
+        transform: rotate(-16deg);
+        text-align: center;
+    }
+    a
+    {
+        text-decoration: none;
+        color: inherit;
+    }
+    a:hover,
+    a:focus-visible
+    {
+        color: #3e3e3b;
+    }
+    .receipt-image
+    {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 110%;
+    }
+    .studio-image
+    {
+        justify-self: center;
+        width: 90%;
+    }
+}
+
+/* FOOTER LAYOUT */
+.footer-grid
+{
+    display: grid;
+    grid-template-columns: 18% 21% 21% 21% 20%;
+    margin: 0;
+}
+
+.flower-box
+{
+    grid-column:1;
+    grid-row: 1/4;
+}
+
+.flash-box
+{
+    grid-column: 2;
+    grid-row: 1/3;
+}
+
+.drawn-star-box
+{
+    grid-column: 3;
+    grid-row: 1/3;
+}
+
+.info-box
+{
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.drawn-text-box
+{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.work-box
+{
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.booking-box
+{
+    grid-column: 4;
+    grid-row: 2/4;
+}
+
+.studio-box
+{
+    grid-column: 5;
+    grid-row: 1/4;
+}
+
+.layered {
+    display: grid;
+}
+
+.layered * 
+{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.centered-layer
+{
+    align-items: center;
+}
+
