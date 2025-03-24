@@ -36,4 +36,14 @@ So far, I have added all the elements for the homepage, without any styling. I t
 During time in studio today, I had a chance to work on the CSS for my homepage. The CSS itself was suprisingly pretty minimal effort. The navigation was very similar to the one in Kevin Powell's tutorial, so I didn't have any issues with that, or will the grid layout (which was also almost exactly the same to the tutorial). The only thing that differed, was the imported fonts, which I was able to look up easily, so hopefully that's working correctly. I ended up with this, which I think looks great and a lot like my original design. 
 ![image](https://github.com/user-attachments/assets/e1a39471-ccc4-4f24-9145-3927e0da02a4)
 
+### March 24, 2025
+Since last class, I started working on the flash page. I added in all the images and few buttons that don't work yet. I had some issues with formatting at first, since I didn't want the images to be perfectly aligned in rows. 
 
+![Screenshot 2025-03-24 104837](https://github.com/user-attachments/assets/a2c7e3ce-59e7-4b13-95f3-65c1bb5d9a31)
+
+However, I was able to mess around with grid layouts and ended up with the layout I had initially wished for. 
+
+![Screenshot 2025-03-24 104932](https://github.com/user-attachments/assets/22a7f856-3397-48c9-b508-2e221c9f0746)
+
+I still am not sure about how I will go about doing the borders. At first, I thought I'd just go through the colors for every nth child. However, with the new formatting it ended up applying a color to images in each row instead of each individual image. I don't hate how it looks, but it's not what I intended. Later, I will either choose one color to add to all the images, or figure out a different way to "randomize" the colors. 
+Also, I want to add some script to make the buttons work how they should, and figure out how I will be going about alt text for these images. 
