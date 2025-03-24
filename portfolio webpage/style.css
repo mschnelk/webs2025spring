@@ -16,7 +16,7 @@
     font-style: italic;
 }
 
-/* BASIC FORMATTING */
+/* GENERAL FORMATTING */
 *
 {
     box-sizing: border-box;
@@ -33,6 +33,7 @@ body
 h1
 {
     font-family: vintella-skillton, serif;
+    text-align: center;
     font-size: 4rem;
     margin: 0;
     @media (width > 700px)
@@ -52,17 +53,6 @@ h1
     }
 }
 
-img
-{
-    display: block;
-}
-
-.embellishment
-{
-    margin: auto;
-    width: 60%;
-}
-
 p
 {
     margin: 0;
@@ -71,6 +61,18 @@ p
     {
         font-size: 1rem;
     }
+}
+
+img
+{
+    display: block;
+}
+
+/* HOMEPAGE FORMATTING */
+.embellishment
+{
+    margin: auto;
+    width: 60%;
 }
 
 .description
@@ -121,7 +123,7 @@ a:focus-visible
     width: 100%;
 }
 
-/* LAYOUT */
+/* HOMEPAGE LAYOUT */
 .three-columns
 {
     display: grid;
@@ -132,6 +134,66 @@ a:focus-visible
 .vertical-flip
 {
     transform:rotate(180deg);
+}
+
+/* FLASH FORMATTING */
+
+/* FLASH LAYOUT */
+.gallery
+{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.gallery img
+{
+    border: 2px dotted;
+}
+
+.gallery img:nth-child(6n + 1)
+{
+    border-color: #cc6f61;
+}
+
+.gallery img:nth-child(6n + 2)
+{
+    border-color: #c5a599;
+}
+
+.gallery img:nth-child(6n + 3)
+{
+    border-color: #a6a8a9;
+}
+
+.gallery img:nth-child(6n + 4)
+{
+    border-color: #cd5545;
+}
+
+.gallery img:nth-child(6n + 5)
+{
+    border-color: #e7eff2;
+}
+
+.gallery img:nth-child(6n + 6)
+{
+    border-color: #a77471;
+}
+
+.gallery-column
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+}
+
+.gallery-column img
+{
+    width: 100%;
 }
 
 /* FOOTER */
@@ -175,9 +237,10 @@ a:focus-visible
 
 .footer-navigation .main-link
 {
+    font-size: 1.25rem;
     @media (width > 1000px)
     {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 }
 
