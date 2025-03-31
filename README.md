@@ -47,3 +47,7 @@ However, I was able to mess around with grid layouts and ended up with the layou
 
 I still am not sure about how I will go about doing the borders. At first, I thought I'd just go through the colors for every nth child. However, with the new formatting it ended up applying a color to images in each row instead of each individual image. I don't hate how it looks, but it's not what I intended. Later, I will either choose one color to add to all the images, or figure out a different way to "randomize" the colors. 
 Also, I want to add some script to make the buttons work how they should, and figure out how I will be going about alt text for these images. 
+
+### March 30, 2025
+I haven't changed much since the last update. I added the other pages along with the standard header and footers to each page. The portfolio doesn't have any images yet, but I can use the same css from the flash page to set it up, I will just need to add the images into the folder. I experimented a bit with the js to try and auto fill the gallery with the images in the folder, but I was unsuccessful since I haven't used js before. I think that will be something I do for the final project, and for next time I will just focus on building the other two pages.
+I also tried to add the stars from the design I originally created for the flash/portfolio pages. I haven't figured out how to have them placed in the background in specific spots, so now they're just awkwardly pasted onto the page. This is also something I'm going to work on later.
