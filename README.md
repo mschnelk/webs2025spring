@@ -2,6 +2,7 @@
 <i>Mia Schnelker</i>
 
 This is a multi-page website created with HTML and CSS, showcasing the artwork of <a href = "https://www.instagram.com/_jackiesque">Jackie</a>, a San Diego-based tattoo artist. 
+The main page is located in docs folder, with the title index.html.
 
 ## Updates
 ### March 18, 2025
