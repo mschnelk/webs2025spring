@@ -28,6 +28,7 @@ body
     color: #1b1a16;
     font-family: certa-sans, serif;
     margin: 0;
+    padding: 0;
 }
 
 h1
@@ -56,11 +57,17 @@ h1
 p
 {
     margin: 0;
-    font-size: .75rem;
-    @media (width > 700px)
+    font-size: .5rem;
+    @media(width > 600px)
     {
-        font-size: 1rem;
-    }
+        font-size: .75rem;
+
+        @media (width > 1000px)
+        {
+            font-size: 1rem;
+        }
+    }    
+   
 }
 
 img
@@ -109,7 +116,8 @@ a:focus-visible
 
 .primary-navigation .red-link
 {
-    color:#cd5545;
+    color: #A1392B;
+    /*color:#cd5545;*/
 }
 
 .primary-navigation .red-link:hover,
@@ -137,6 +145,80 @@ a:focus-visible
 }
 
 /* FLASH FORMATTING */
+.filter
+{
+    width: 42%;
+    margin: auto;
+}
+
+.filter button
+{
+    background-color: inherit;
+    font-family: inherit;
+    font-size: 1.25rem;
+    padding: 0 10px;
+    text-decoration: none;
+    border: none;
+    border-right: 2px solid #1b1a16;
+}
+
+.filter .current
+{
+    color: #A1392B;
+}
+
+.filter .final
+{
+    border: none;
+}
+
+.gallery-booking
+{
+    display: block;
+    text-align: center;
+    width: 20%;
+    min-width: 150px;
+    margin: 20px auto;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #e7eff2;
+    padding: 15px 20px;
+    border-radius: 60px;
+    background-color: #a77471;
+}
+
+.gallery-booking:hover, 
+.galley-booking:focus-visible
+{
+    color: #cbccce; 
+
+}
+
+.top-star
+{
+    width: 10%;
+    position: absolute;
+    right: 15%;
+    top: 40%;        
+}
+
+.bottom-star
+{
+    width: 10%;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+/* TRANSFORMATIONS */
+.rotate-left
+{
+    transform:rotate(-13deg);
+}
+
+.rotate-right
+{
+    transform:rotate(13deg);
+}
 
 /* FLASH LAYOUT */
 .gallery
@@ -185,10 +267,9 @@ a:focus-visible
 
 .gallery-column
 {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 10px;
-    justify-content: start;
+    align-content: start;
 }
 
 .gallery-column img
@@ -222,11 +303,18 @@ footer
 {
     text-decoration: none;
     color: inherit;
-    font-size: 1rem;
-    @media (width > 1000px)
+   
+    font-size: .75rem;
+    @media (width > 700px)
     {
-        font-size: 1.25rem;
+        font-size: 1rem;
+
+        @media(width > 1000px)
+        {
+            font-size: 1.25rem;
+        }
     }
+       
 }
 
 .footer-navigation a:hover,
@@ -237,10 +325,14 @@ a:focus-visible
 
 .footer-navigation .main-link
 {
-    font-size: 1.25rem;
-    @media (width > 1000px)
+    font-size: 1rem;
+    @media (width > 700px)
     {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
+        @media (width > 1000px)
+        {
+            font-size: 1.5rem;
+        }
     }
 }
 
@@ -250,10 +342,10 @@ a:focus-visible
     color: #3e3e3b;
 }
 
+
 /* BOX FORMATTING */
 .flower-box
 {
-
     .flower-flash
     {
         width: 100%;
@@ -291,10 +383,14 @@ a:focus-visible
 
 .booking-box
 {
+    overflow: hidden;
     align-self: start;
     justify-self: start;
     transform: rotate(13deg);
-    .booking-text
+    text-decoration: none;
+    color: #e7eff2;
+    text-align: center;
+    p
     {
         padding-top: 5%;
         font-size: .75rem;
@@ -303,22 +399,17 @@ a:focus-visible
             font-size: 1.25rem;
         }
     }
-    a
-    {
-        text-decoration: none;
-        color: #e7eff2;
-        text-align: center;
-    }
-    a:hover,
-    a:focus-visible
-    {
-        color: #cbccce; 
-    }
     img
     {
-        width: 70%;
+        width:60%;
         margin: auto;
     }
+}
+
+.booking-box:hover,
+.booking-box:focus-visible
+{
+    color: #cbccce; 
 }
 
 .studio-box
@@ -327,7 +418,6 @@ a:focus-visible
     align-items: center;
     grid-column-start: 1;
     grid-row-start: 1;
-
     .receipt-text
     {
         transform: rotate(-16deg);
@@ -354,7 +444,6 @@ a:focus-visible
         bottom: 0;
         right: 0;
         height: 105%;
-
     }
     .studio-image
     {
@@ -372,7 +461,7 @@ a:focus-visible
     grid-template-columns: 25% 37% 38%;
     @media(width > 1000px)
     {
-        grid-template-columns: 18% 21% 21% 21% 20%;
+        grid-template-columns: 18% 21% 21% 20% 20%;
     }
 }
 
@@ -418,6 +507,7 @@ a:focus-visible
 
 .work-box
 {
+    overflow: hidden;
     grid-column:3;
     grid-row: 2;
     @media(width > 1000px)
@@ -457,7 +547,7 @@ a:focus-visible
     grid-row-start: 1;
 }
 
-.centered-layer
+.centered
 {
     align-items: center;
 }
