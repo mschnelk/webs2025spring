@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <title>flash by jackie o</title>
+        <title>flash</title>
         <link href = "style.css" rel = "stylesheet">
-        <script src="script.js" type = "text/javascript"></script>
+        <script src="script.js" defer></script>
     </head>
     <body>
         <header>
@@ -16,19 +16,21 @@
                     <li><a class = "red-link" href = "https://docs.google.com/forms/d/e/1FAIpQLSeeZpCL8THMz4e5AQ_5nhkX5upA49F1hfiALQ6a0H9co4pDig/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaZuBdNwA7BtHlb2YkZw74qt5tQz9Zu7QTOe5YtHTIJ3qQHr67YXyYYw1lI_aem_FLfB8D3-MYvu0XfGUGzJ3Q">Booking</a></li>
                 </ul>
             </nav>
+
+            <p class = "credits">all images from <a href = "https://instagram.com/_jackiesque">@_jackiesque</a> on instagram</p>
         </header>
 
         <main>
     
             <h1>flash tattoos</h1>
-            <div class = "filter">
-                <button class = "current">all</button>
-                <button>flora</button>
-                <button>fauna</button>
-                <button>folk</button>
-                <button>celestial</button>
-                <button>wild flowers</button>
-                <button class = "final">small tattoos</button>
+            <div class = "filter" id = "filter">
+                <button data-filter = "all" onclick = "filterSelection('all')">all</button>
+                <button data-filter = "flora" onclick = "filterSelection('flora')">flora</button>
+                <button data-filter = "fauna" onclick = "filterSelection('fauna')">fauna</button>
+                <button data-filter = "folk" onclick = "filterSelection('folk')">folk</button>
+                <button data-filter = "celestial" onclick = "filterSelection('celestial')">celestial</button>
+                <button data-filter = "wild-flower" onclick = "filterSelection('wild-flower')">wild flowers</button>
+                <button data-filter = "small" onclick = "filterSelection('small')" class = "final">small tattoos</button>
             </div>
             
             <a class = "gallery-booking" href = "https://docs.google.com/forms/d/e/1FAIpQLSeeZpCL8THMz4e5AQ_5nhkX5upA49F1hfiALQ6a0H9co4pDig/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaZuBdNwA7BtHlb2YkZw74qt5tQz9Zu7QTOe5YtHTIJ3qQHr67YXyYYw1lI_aem_FLfB8D3-MYvu0XfGUGzJ3Q">book an appointment</a>
@@ -37,62 +39,61 @@
 
             <div class = "gallery">
                 <div class = "gallery-column" id = "flash-1">
-                    <img src = "images/flash/48.png">
-                    <img src = "images/flash/44.png">
-                    <img src = "images/flash/40.png">
-                    <img src = "images/flash/36.png">
-                    <img src = "images/flash/32.png">
-                    <img src = "images/flash/28.png">
-                    <img src = "images/flash/23.png">
-                    <img src = "images/flash/19.png">
-                    <img src = "images/flash/15.jpeg">
-                    <img src = "images/flash/11.png">
-                    <img src = "images/flash/7.png">
+                    <img class = "folk celestial" src = "images/flash/flash (47).png">
+                    <img class = "flora fauna" src = "images/flash/flash (43).png">
+                    <img class = "flora fauna" src = "images/flash/flash (39).png">
+                    <img class = "wild-flower flora" src = "images/flash/flash (35).png">
+                    <img class = "wild-flower flora" src = "images/flash/flash (31).png">
+                    <img class = "wild-flower flora" src = "images/flash/flash (27).png">
+                    <img class = "folk flora" src = "images/flash/flash (23).png">
+                    <img class = "flora folk font" src = "images/flash/flash (19).png">
+                    <img class = "flora font small" src = "images/flash/flash (15).png">
+                    <img class = "flora fauna" src = "images/flash/flash (11).png">
+                    <img class = "flora" src = "images/flash/flash (7).png">
+                    <img class = "flora fauna small" src = "images/flash/flash (3).png">
                 </div>
                 <div class = "gallery-column" id = "flash-2">
-                    <img src = "images/flash/47.png">
-                    <img src = "images/flash/43.png">
-                    <img src = "images/flash/39.png">
-                    <img src = "images/flash/35.png">
-                    <img src = "images/flash/31.png">
-                    <img src = "images/flash/27.png">
-                    <img src = "images/flash/22.png">
-                    <img src = "images/flash/18.png">
-                    <img src = "images/flash/14.png">
-                    <img src = "images/flash/10.jpeg">
-                    <img src = "images/flash/6.png">
+                    <img class = "flora folk" src = "images/flash/flash (46).png">
+                    <img class = "flora fauna folk" src = "images/flash/flash (42).png">
+                    <img class = "flora fauna folk" src = "images/flash/flash (38).png">
+                    <img class = "wild-flower flora" src = "images/flash/flash (34).png">
+                    <img class = "wild-flower flora" src = "images/flash/flash (30).png">
+                    <img class = "wild-flower flora" src = "images/flash/flash (26).png">
+                    <img src = "images/flash/flash (22).png">
+                    <img class = "fauna" src = "images/flash/flash (18).png">
+                    <img class = "flora fauna folk" src = "images/flash/flash (14).png">
+                    <img class = "flora fauna font small" src = "images/flash/flash (10).png">
+                    <img class = "flora font small" src = "images/flash/flash (6).png">
+                    <img class = "flora" src = "images/flash/flash (2).png">
                 </div>
                 <div class = "gallery-column" id = "flash-3">
-                    <img src = "images/flash/46.png">
-                    <img src = "images/flash/42.png">
-                    <img src = "images/flash/38.png">
-                    <img src = "images/flash/34.png">
-                    <img src = "images/flash/30.png">
-                    <img src = "images/flash/21.png">
-                    <img src = "images/flash/17.png">
-                    <img src = "images/flash/13.png">
-                    <img src = "images/flash/9.png">
-                    <img src = "images/flash/5.png">
-                    <img src = "images/flash/1.png">
-                    <img src = "images/flash/3.png">
+                    <img class = "flora folk" src = "images/flash/flash (45).png">
+                    <img class = "flora font" src = "images/flash/flash (41).png">
+                    <img class = "wild-flower flora" src = "images/flash/flash (37).png">
+                    <img class = "wild-flower flora" src = "images/flash/flash (33).png">
+                    <img class = "wild-flower flora" src = "images/flash/flash (29).png">
+                    <img class = "wild-flower flora" src = "images/flash/flash (25).png">
+                    <img class = "flora" src = "images/flash/flash (21).png">
+                    <img class = "fauna folk small" src = "images/flash/flash (17).png">
+                    <img class = "flora fauna small" src = "images/flash/flash (13).png">
+                    <img class = "fauna small" src = "images/flash/flash (9).png">
+                    <img class = "fauna" src = "images/flash/flash (5).png">
+                    <img class = "fauna folk celestial small"src = "images/flash/flash (1).png">
                 </div>
                 <div class = "gallery-column" id = "flash-4">
-                    <img src = "images/flash/45.png">
-                    <img src = "images/flash/41.png">
-                    <img src = "images/flash/37.png">
-                    <img src = "images/flash/33.png">
-                    <img src = "images/flash/29.png">
-                    <img src = "images/flash/24.png">
-                    <img src = "images/flash/20.png">
-                    <img src = "images/flash/16.png">
-                    <img src = "images/flash/12.png">
-                    <img src = "images/flash/8.png">
-                    <img src = "images/flash/4.png">
-                    <img src = "images/flash/2.png">
+                    <img class = "flora fauna" src = "images/flash/flash (44).png">
+                    <img class = "flora fauna" src = "images/flash/flash (40).png">
+                    <img class = "flora fauna font" src = "images/flash/flash (36).png">
+                    <img class = "wild-flower flora" src = "images/flash/flash (32).png">
+                    <img class = "wild-flower flora" src = "images/flash/flash (28).png">
+                    <img class = "wild-flower flora" src = "images/flash/flash (24).png">
+                    <img class = "fauna celestial" src = "images/flash/flash (20).png">
+                    <img class = "small" src = "images/flash/flash (16).png">
+                    <img class = "flora fauna" src = "images/flash/flash (12).png">
+                    <img class = "flora font" src = "images/flash/flash (8).png">
+                    <img class = "flora folk celestial" src = "images/flash/flash (4).png">
                 </div>    
-            </div>
-            <button id = "load-more">load more</button>
-        
+            </div>        
         </main>
 
         <footer>
@@ -107,22 +108,24 @@
 
                 <nav class = "flash-box footer-navigation">
                     <ul>
-                        <li><a class = "main-link" href = "flash.html">flash designs</a></li>
-                        <li><a>wild flowers</a></li>
-                        <li><a>cowboys & flowers</a></li>
-                        <li><a>valentine's day</a></li>
-                        <li><a>studio ghibli</a></li>
+                        <li><a class = "main-link" href = "flash.html?filter=all">flash designs</a></li>
+                        <li><a href = "flash.html?filter=flora">flora</a></li>
+                        <li><a href = "flash.html?filter=fauna">fauna</a></li>
+                        <li><a href = "flash.html?filter=folk">folk</a></li>
+                        <li><a href = "flash.html?filter=celestial">celestial</a></li>
+                        <li><a href = "flash.html?filter=wild-flower">wild flowers</a></li>
+                        <li><a href = "flash.html?filter=small">small tattoos</a></li>
                     </ul>
                 </nav>
+
 
                 <img class = "drawn-star-box hidden-small-screen" src = "images/drawn-stars.png" alt = "">
                 
                 <nav class = "info-box footer-navigation">
                     <ul>
-                        <li><a class = "main-link">info</a></li>
-                        <li><a>small tattoos</a></li>
-                        <li><a>before you book</a></li>
-                        <li><a>aftercare</a></li>
+                        <li><a href = "info.html" class = "main-link">info</a></li>
+                        <li><a href = "info.html#before-book">before you book</a></li>
+                        <li><a href = "info.html#small-tattoos">small tattoos</a></li>
                     </ul>
                 </nav>
 
@@ -131,8 +134,8 @@
                 <nav class = "work-box footer-navigation">
                     <ul>
                         <li><a class = "main-link">my work</a></li>
-                        <li><a>fresh</a></li>
-                        <li><a>healed</a></li>
+                        <li><a href = "portfolio.html?filter=fresh">fresh</a></li>
+                        <li><a href = "portfolio.html?filter=healed">healed</a></li>
                     </ul>
                 </nav>
 
@@ -142,7 +145,7 @@
                 </a>
         
 
-                <div class = "studio-box hidden-small-screen center-layer">
+                <div class = "studio-box hidden-small-screen layered center-layer">
                     <img class = "receipt-image" src = "images/reciept-paper.png" alt = "">
                     <div class = "receipt-text">
                         <p>come to my</p>

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <title>portoflio</title>
+        <title>portfolio</title>
         <link href = "style.css" rel = "stylesheet">
+        <script src="script.js" defer></script>
     </head>
 
     <body>
@@ -16,16 +17,164 @@
                     <li><a class = "red-link" href = "https://docs.google.com/forms/d/e/1FAIpQLSeeZpCL8THMz4e5AQ_5nhkX5upA49F1hfiALQ6a0H9co4pDig/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaZuBdNwA7BtHlb2YkZw74qt5tQz9Zu7QTOe5YtHTIJ3qQHr67YXyYYw1lI_aem_FLfB8D3-MYvu0XfGUGzJ3Q">Booking</a></li>
                 </ul>
             </nav>
+
+            <p class = "credits">all images from <a href = "https://instagram.com/_jackiesque">@_jackiesque</a> on instagram</p>
         </header>
         <main>
             <h1>my work</h1>
-            <div class = "filter">
-                <button class = "current">all</button>
-                <button>fresh</button>
-                <button>healed</button>
+            <div class = "filter" id = "filter">
+                <button data-filter = "all" onclick = "filterSelection('all')">all</button>
+                <button data-filter = "fresh" onclick = "filterSelection('fresh')">fresh</button>
+                <button data-filter = "healed" onclick = "filterSelection('healed')">healed</button>
             </div>
 
             <a class = "gallery-booking" href = "https://docs.google.com/forms/d/e/1FAIpQLSeeZpCL8THMz4e5AQ_5nhkX5upA49F1hfiALQ6a0H9co4pDig/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaZuBdNwA7BtHlb2YkZw74qt5tQz9Zu7QTOe5YtHTIJ3qQHr67YXyYYw1lI_aem_FLfB8D3-MYvu0XfGUGzJ3Q">book an appointment</a>
+
+            <div class = "gallery">
+                <div class = "gallery-column">
+                    <img alt = "alt = "a collection of tattoos done by jackie" class = "fresh" src = "images/tattoos/fresh/fresh (113).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (109).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (105).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (101).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (97).png">
+                    <img alt = "a collection of tattoos done by jackie" class = "healed" src = "images/tattoos/healed/healed (1).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (93).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (89).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (85).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (81).png">
+                    <img class = "healed" src = "images/tattoos/healed/healed (6).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (77).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (73).png">
+                    <img class = "healed" src = "images/tattoos/healed/healed (9).png">
+                    <img class = "healed" src = "images/tattoos/healed/healed (12).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (69).png">
+                    <img class = "healed" src = "images/tattoos/healed/healed (16).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (65).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (61).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (57).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (53).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (49).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (45).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (41).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (37).png">      
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (33).png">  
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (29).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (25).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (21).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (17).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (13).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (9).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (5).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (1).png">                          
+                </div>
+                <div class = "gallery-column">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (116).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (112).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (108).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (104).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (100).png">
+                    <img class = "healed" src = "images/tattoos/healed/healed (2).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (96).png">
+                    <img class = "healed" src = "images/tattoos/healed/healed (7).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (92).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (88).png">
+                    <img class = "healed" src = "images/tattoos/healed/healed (10).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (84).png">
+                    <img class = "healed" src = "images/tattoos/healed/healed (13).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (80).png">
+                    <img class = "healed" src = "images/tattoos/healed/healed (17).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (76).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (72).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (68).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (64).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (60).png">      
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (56).png"> 
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (52).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (48).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (44).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (40).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (36).png">      
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (32).png"> 
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (28).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (24).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (20).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (16).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (12).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (8).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (4).png">           
+                </div>
+                <div class = "gallery-column">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (115).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (111).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (107).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (103).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (99).png">
+                    <img class = "healed" src = "images/tattoos/healed/healed (3).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (95).png">
+                    <img class = "healed" src = "images/tattoos/healed/healed (8).png">
+                    <img class = "healed" src = "images/tattoos/healed/healed (11).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (91).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (87).png">
+                    <img class = "healed" src = "images/tattoos/healed/healed (14).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (83).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (79).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (75).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (71).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (67).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (63).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (59).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (55).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (51).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (47).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (43).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (39).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (35).png">      
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (31).png"> 
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (27).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (23).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (19).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (15).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (11).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (7).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (3).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (2).png">                   
+                </div>
+                <div class = "gallery-column">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (114).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (110).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (106).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (102).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (98).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (94).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (90).png">
+                    <img class = "healed" src = "images/tattoos/healed/healed (18).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (86).png">
+                    <img class = "healed" src = "images/tattoos/healed/healed (4).png">
+                    <img class = "healed" src = "images/tattoos/healed/healed (5).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (82).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (78).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (74).png">
+                    <img class = "healed" src = "images/tattoos/healed/healed (15).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (70).png">
+                    <img class = "healed" src = "images/tattoos/healed/healed (19).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (66).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (62).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (58).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (54).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (50).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (46).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (42).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (38).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (34).png">      
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (30).png"> 
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (26).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (22).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (18).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (14).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (10).png">
+                    <img class = "fresh" src = "images/tattoos/fresh/fresh (6).png">
+                </div>
+            </div>
         </main>
         <footer>
             <div class = "footer-grid">
@@ -39,22 +188,24 @@
 
                 <nav class = "flash-box footer-navigation">
                     <ul>
-                        <li><a class = "main-link" href = "flash.html">flash designs</a></li>
-                        <li><a>wild flowers</a></li>
-                        <li><a>cowboys & flowers</a></li>
-                        <li><a>valentine's day</a></li>
-                        <li><a>studio ghibli</a></li>
+                        <li><a class = "main-link" href = "flash.html?filter=all">flash designs</a></li>
+                        <li><a href = "flash.html?filter=flora">flora</a></li>
+                        <li><a href = "flash.html?filter=fauna">fauna</a></li>
+                        <li><a href = "flash.html?filter=folk">folk</a></li>
+                        <li><a href = "flash.html?filter=celestial">celestial</a></li>
+                        <li><a href = "flash.html?filter=wild-flower">wild flowers</a></li>
+                        <li><a href = "flash.html?filter=small">small tattoos</a></li>
                     </ul>
                 </nav>
+
 
                 <img class = "drawn-star-box hidden-small-screen" src = "images/drawn-stars.png" alt = "">
                 
                 <nav class = "info-box footer-navigation">
                     <ul>
-                        <li><a class = "main-link">info</a></li>
-                        <li><a>small tattoos</a></li>
-                        <li><a>before you book</a></li>
-                        <li><a>aftercare</a></li>
+                        <li><a class = "main-link" href = "info.html">info</a></li>
+                        <li><a href = "info.html#before-book">before you book</a></li>
+                        <li><a href = "info.html#small-tattoos">small tattoos</a></li>
                     </ul>
                 </nav>
 
@@ -62,9 +213,9 @@
 
                 <nav class = "work-box footer-navigation">
                     <ul>
-                        <li><a class = "main-link">my work</a></li>
-                        <li><a>fresh</a></li>
-                        <li><a>healed</a></li>
+                        <li><a class = "main-link" href = "portfolio.html">my work</a></li>
+                        <li><a href = "portfolio.html?filter=fresh">fresh</a></li>
+                        <li><a href = "portfolio.html?filter=healed">healed</a></li>
                     </ul>
                 </nav>
 
@@ -74,7 +225,7 @@
                 </a>
         
 
-                <div class = "studio-box hidden-small-screen center-layer">
+                <div class = "studio-box hidden-small-screen layered center-layer">
                     <img class = "receipt-image" src = "images/reciept-paper.png" alt = "">
                     <div class = "receipt-text">
                         <p>come to my</p>
