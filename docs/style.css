@@ -84,8 +84,11 @@ header
 
 .credits
 {
-    margin: 25px 50px;
+    margin: 25px 50px 0 0;
     color:#3e3e3b;
+}
+.credits p
+{
     font-size: .75rem;
 }
 
@@ -589,7 +592,7 @@ a:focus-visible
 .drawn-text-box
 {
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 3;
 }
 
 .work-box
