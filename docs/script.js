@@ -15,14 +15,13 @@ function filterSelection(c) {
   }
 
   if (c == "all") c = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
   for (i = 0; i < x.length; i++) {
     removeClass(x[i], "show");
     if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
   }
 }
 
-// Show filtered elements
+// show filtered images
 function addClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
@@ -34,7 +33,7 @@ function addClass(element, name) {
   }
 }
 
-// Hide elements that are not selected
+// hide images that are not selected
 function removeClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
@@ -55,7 +54,7 @@ for (let i = 0; i < btns.length; i++) {
     this.classList.add("current");
   });
 
-  // Set the initial "current" button
+  // set the intial filter to "current" button
   if (btns[i].getAttribute("data-filter") === initialFilter) {
     btns[i].classList.add("current");
   }

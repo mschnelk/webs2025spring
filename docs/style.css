@@ -134,6 +134,11 @@ a:focus-visible
     color: inherit;
 }
 
+.primary-navigation .current-page
+{
+    color: #3e3e3b;
+}
+
 .primary-navigation a:hover,
 a:focus-visible
 {
@@ -545,6 +550,7 @@ a:focus-visible
     }
 }
 
+
 .flower-box
 {
     grid-column:1;
@@ -564,9 +570,8 @@ a:focus-visible
 
 .drawn-star-box
 {
-    display: grid;
     grid-column: 3;
-    grid-row: 1/3;
+    grid-row: 1;
 }
 
 .info-box
@@ -584,7 +589,7 @@ a:focus-visible
 .drawn-text-box
 {
     grid-column: 2;
-    grid-row: 3;
+    grid-row: 2;
 }
 
 .work-box
@@ -592,12 +597,15 @@ a:focus-visible
     padding: 20px;
     grid-column:3;
     grid-row: 2;
+    
     @media(width > 1000px)
     {
         grid-column: 3;
         grid-row: 3;
     }
+        
 }
+
 
 .booking-box
 {
