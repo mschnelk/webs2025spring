@@ -3,6 +3,7 @@
     <head>
         <title>flash</title>
         <link href = "style.css" rel = "stylesheet">
+        <link href = "footer.css" rel = "stylesheet">
         <script src="script.js" defer></script>
     </head>
     <body>
@@ -27,135 +28,63 @@
     
             <h1>flash tattoos</h1>
             <div class = "filter" id = "filter">
-                <button data-filter = "all" onclick = "filterSelection('all')">all</button>
-                <button data-filter = "flora" onclick = "filterSelection('flora')">flora</button>
-                <button data-filter = "fauna" onclick = "filterSelection('fauna')">fauna</button>
-                <button data-filter = "folk" onclick = "filterSelection('folk')">folk</button>
-                <button data-filter = "celestial" onclick = "filterSelection('celestial')">celestial</button>
-                <button data-filter = "wild-flower" onclick = "filterSelection('wild-flower')">wild flowers</button>
-                <button data-filter = "small" onclick = "filterSelection('small')" class = "final">small tattoos</button>
+                <button data-filter = "all" onclick = "setFilter('all')">all</button>
+                <button data-filter = "flora-fauna" onclick = "setFilter('flora-fauna')">flora & fauna</button>
+                <button data-filter = "western" onclick = "setFilter('western')">western</button>
+                <button data-filter = "celestial" onclick = "setFilter('celestial')">celestial</button>
+                <button data-filter = "wild-flower" onclick = "setFilter('wild-flower')">wild flowers</button>
+                <button data-filter = "small" onclick = "setFilter('small')" class = "final">small tattoos</button>
             </div>
             
             <a class = "gallery-booking" href = "https://docs.google.com/forms/d/e/1FAIpQLSeeZpCL8THMz4e5AQ_5nhkX5upA49F1hfiALQ6a0H9co4pDig/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaZuBdNwA7BtHlb2YkZw74qt5tQz9Zu7QTOe5YtHTIJ3qQHr67YXyYYw1lI_aem_FLfB8D3-MYvu0XfGUGzJ3Q">book an appointment</a>
             <img class = "top-star rotate-right" src = "images/red-star.png" alt = "">
 
-            <div class = "gallery">
-                <div class = "gallery-column" id = "flash-1">
-                    <img alt = "collection of flash art by jackie" class = "folk celestial" src = "images/flash/flash (47).png">
-                    <img alt = "collection of flash art by jackie" class = "flora fauna" src = "images/flash/flash (43).png">
-                    <img class = "flora fauna" src = "images/flash/flash (39).png">
-                    <img alt = "collection of flash art by jackie" class = "wild-flower flora" src = "images/flash/flash (35).png">
-                    <img class = "wild-flower flora" src = "images/flash/flash (31).png">
-                    <img class = "wild-flower flora" src = "images/flash/flash (27).png">
-                    <img class = "folk flora" src = "images/flash/flash (23).png">
-                    <img class = "flora folk font" src = "images/flash/flash (19).png">
-                    <img alt = "collection of flash art by jackie" class = "flora font small" src = "images/flash/flash (15).png">
-                    <img class = "flora fauna" src = "images/flash/flash (11).png">
-                    <img class = "flora" src = "images/flash/flash (7).png">
-                    <img class = "flora fauna small" src = "images/flash/flash (3).png">
-                </div>
-                <div class = "gallery-column" id = "flash-2">
-                    <img class = "flora folk" src = "images/flash/flash (46).png">
-                    <img class = "flora fauna folk" src = "images/flash/flash (42).png">
-                    <img class = "flora fauna folk" src = "images/flash/flash (38).png">
-                    <img class = "wild-flower flora" src = "images/flash/flash (34).png">
-                    <img class = "wild-flower flora" src = "images/flash/flash (30).png">
-                    <img class = "wild-flower flora" src = "images/flash/flash (26).png">
-                    <img src = "images/flash/flash (22).png">
-                    <img class = "fauna" src = "images/flash/flash (18).png">
-                    <img class = "flora fauna folk" src = "images/flash/flash (14).png">
-                    <img class = "flora fauna font small" src = "images/flash/flash (10).png">
-                    <img class = "flora font small" src = "images/flash/flash (6).png">
-                    <img class = "flora" src = "images/flash/flash (2).png">
-                </div>
-                <div class = "gallery-column" id = "flash-3">
-                    <img class = "flora folk" src = "images/flash/flash (45).png">
-                    <img class = "flora font" src = "images/flash/flash (41).png">
-                    <img class = "wild-flower flora" src = "images/flash/flash (37).png">
-                    <img class = "wild-flower flora" src = "images/flash/flash (33).png">
-                    <img class = "wild-flower flora" src = "images/flash/flash (29).png">
-                    <img class = "wild-flower flora" src = "images/flash/flash (25).png">
-                    <img class = "flora" src = "images/flash/flash (21).png">
-                    <img class = "fauna folk small" src = "images/flash/flash (17).png">
-                    <img class = "flora fauna small" src = "images/flash/flash (13).png">
-                    <img class = "fauna small" src = "images/flash/flash (9).png">
-                    <img class = "fauna" src = "images/flash/flash (5).png">
-                    <img class = "fauna folk celestial small"src = "images/flash/flash (1).png">
-                </div>
-                <div class = "gallery-column" id = "flash-4">
-                    <img class = "flora fauna" src = "images/flash/flash (44).png">
-                    <img class = "flora fauna" src = "images/flash/flash (40).png">
-                    <img class = "flora fauna font" src = "images/flash/flash (36).png">
-                    <img class = "wild-flower flora" src = "images/flash/flash (32).png">
-                    <img class = "wild-flower flora" src = "images/flash/flash (28).png">
-                    <img class = "wild-flower flora" src = "images/flash/flash (24).png">
-                    <img class = "fauna celestial" src = "images/flash/flash (20).png">
-                    <img class = "small" src = "images/flash/flash (16).png">
-                    <img class = "flora fauna" src = "images/flash/flash (12).png">
-                    <img class = "flora font" src = "images/flash/flash (8).png">
-                    <img class = "flora folk celestial" src = "images/flash/flash (4).png">
-                </div>    
-            </div>        
+            <div class = "gallery" id = "gallery"></div>
+            
+            <button onclick = "loadMoreImages()" id= "load-more">load more!</button>
         </main>
 
-        <footer>
-            <div class = "footer-grid">
-                <div class = "flower-box layered">
-                    <img class = "flower-flash" src = "images/flower-flash.png" alt = "hand drawn tattoo flash of a flower outline with arsty details">
-                    <div class = "logo-group">
-                        <a href = "https://instagram.com/_jackiesque"><img class = "logo" src = "images/Instagram_Glyph_Black.png" alt = "instagram"></a>
-                        <a href = "https://tiktok.com/herbbist"><img class = "logo" src = "images/tiktok-icon-black-01.png" alt = "tiktok"></a>
-                    </div>
-                </div>
+        <footer class = "footer-grid">
+            <a class = "footer-flower" href = "index.html"><img class = "footer-flower" src = "images/flower-flash.png" alt = "hand drawn tattoo flash of a flower outline with artsy details"></a>
+            <img class = "footer-drawn-text" src = "images/flower-flash-text.png" alt = "">
 
-                <nav class = "flash-box footer-navigation">
-                    <ul>
-                        <li><a class = "main-link" href = "flash.html?filter=all">flash designs</a></li>
-                        <li><a href = "flash.html?filter=flora">flora</a></li>
-                        <li><a href = "flash.html?filter=fauna">fauna</a></li>
-                        <li><a href = "flash.html?filter=folk">folk</a></li>
-                        <li><a href = "flash.html?filter=celestial">celestial</a></li>
-                        <li><a href = "flash.html?filter=wild-flower">wild flowers</a></li>
-                        <li><a href = "flash.html?filter=small">small tattoos</a></li>
-                    </ul>
-                </nav>
+            <nav class = "work-box footer-navigation">
+                <ul>
+                    <li><a class = "main-link" href = "portfolio.html?filter=all">my work</a></li>
+                    <li><a href = "portfolio.html?filter=fresh">fresh</a></li>
+                    <li><a href = "portfolio.html?filter=healed">healed</a></li>
+                </ul>
+            </nav>
 
+            <nav class = "flash-box footer-navigation">
+                <ul>
+                    <li><a class = "main-link" href = "flash.html?filter=all">flash designs</a></li>
+                    <li><a href = "flash.html?filter=flora-fauna">flora & fauna</a></li>
+                    <li><a href = "flash.html?filter=western">western</a></li>
+                    <li><a href = "flash.html?filter=celestial">celestial</a></li>
+                    <li><a href = "flash.html?filter=wild-flower">wild flowers</a></li>
+                    <li><a href = "flash.html?filter=small">small tattoos</a></li>
+                </ul>
+            </nav>
 
-                <img class = "drawn-star-box hidden-small-screen" src = "images/drawn-stars.png" alt = "">
-                
-                <nav class = "info-box footer-navigation">
-                    <ul>
-                        <li><a href = "info.html" class = "main-link">info</a></li>
-                        <li><a href = "info.html#before-book">before you book</a></li>
-                        <li><a href = "info.html#small-tattoos">small tattoos</a></li>
-                    </ul>
-                </nav>
+            <nav class = "info-box footer-navigation">
+                <ul>
+                    <li><a class = "main-link" href = "info.html">info</a></li>
+                    <li><a href = "info.html#before-book">getting small tattoos</a></li>
+                    <li><a href = "info.html#small-tattoos">before you book</a></li>
+                    <li><a>before your appointment</a></li>
+                </ul>
+            </nav>
 
-                <img class = "drawn-text-box hidden-small-screen" src = "images/flower-flash-text.png" alt = "">
+            <a class = "booking-box" href = "https://docs.google.com/forms/d/e/1FAIpQLSeeZpCL8THMz4e5AQ_5nhkX5upA49F1hfiALQ6a0H9co4pDig/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaZuBdNwA7BtHlb2YkZw74qt5tQz9Zu7QTOe5YtHTIJ3qQHr67YXyYYw1lI_aem_FLfB8D3-MYvu0XfGUGzJ3Q">book with me :)</a>
 
-                <nav class = "work-box footer-navigation">
-                    <ul>
-                        <li><a class = "main-link">my work</a></li>
-                        <li><a href = "portfolio.html?filter=fresh">fresh</a></li>
-                        <li><a href = "portfolio.html?filter=healed">healed</a></li>
-                    </ul>
-                </nav>
-
-                <a class = "booking-box layered centered" href = "https://docs.google.com/forms/d/e/1FAIpQLSeeZpCL8THMz4e5AQ_5nhkX5upA49F1hfiALQ6a0H9co4pDig/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaZuBdNwA7BtHlb2YkZw74qt5tQz9Zu7QTOe5YtHTIJ3qQHr67YXyYYw1lI_aem_FLfB8D3-MYvu0XfGUGzJ3Q">
-                    <img src = "images/red-star.png" alt = "">
-                    <p>book with<br>me</p>
-                </a>
-        
-
-                <div class = "studio-box hidden-small-screen layered center-layer">
-                    <img class = "receipt-image" src = "images/reciept-paper.png" alt = "">
-                    <div class = "receipt-text">
-                        <p>come to my</p>
-                        <a href = "https://www.google.com/maps/place/1835+Imperial+Ave,+San+Diego,+CA+92102/@32.7060948,-117.1495847,16z/data=!3m1!4b1!4m6!3m5!1s0x80d95368f5eaf34d:0xd4770c38bcf67de0!8m2!3d32.7060948!4d-117.1470098!16s%2Fg%2F11bw4ffth0?entry=ttu&g_ep=EgoyMDI1MDMxNy4wIKXMDSoASAFQAw%3D%3D"><img class = "studio-image" src = "images/private-studio.png" alt = "private studio">1835 Imperial Ave<br>San Diego, CA 92102</a>
-                    </div>
-                </div>
-
+            <div class = "footer-logos">
+                <a href = "https://instagram.com/_jackiesque"><img class = "logo" src = "images/Instagram_Glyph_Black.png" alt = "instagram"></a>
+                <a href = "https://tiktok.com/herbbist"><img class = "logo" src = "images/tiktok-icon-black-01.png" alt = "tiktok"></a>
             </div>
+
+            <a href = "attributions.html" class = "media-attr">media attributions</a>
+            <p class = "credit">designed and built by mia schnelker</p>
         </footer>
 
     </body>
