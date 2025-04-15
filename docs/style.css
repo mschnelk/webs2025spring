@@ -342,7 +342,7 @@ a:focus-visible
     border-color: #a77471;
 }
 
-#gallery-column
+.gallery-column
 {
     display: grid;
     gap: 10px;
@@ -352,6 +352,14 @@ a:focus-visible
 .gallery-column img
 {
     width: 100%;
+}
+
+.expanded
+{
+    position: fixed;
+    width: 60%;
+    
+    
 }
 
 /* INFO PAGE */
