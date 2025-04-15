@@ -176,7 +176,13 @@ a:focus-visible
 .logo
 {
     width: 23px;
-    margin-right: 7px;
+    margin-right: 8px;
+}
+
+.logo:hover,
+.logo:focus-visible
+{
+    width:25px;
 }
 
 .media-attr, .credit

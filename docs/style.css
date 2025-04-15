@@ -358,7 +358,7 @@ a:focus-visible
 {
     position: fixed;
     width: 60%;
-    
+
     
 }
 
@@ -390,3 +390,29 @@ a:focus-visible
     padding: 0;
 }
 
+
+/* ATTRIBUTIONS */
+.attributions
+{
+    justify-self: center;
+    align-self: center;
+    list-style-image: url('images/gold-star-small.png');
+    font-size: 1.25rem;    
+}
+
+.attributions p
+{
+    padding-bottom: 10px;
+}
+
+
+.attributions::marker
+{
+    padding:none;
+}
+
+.attributions a
+{
+    text-decoration: underline dotted;
+    color: inherit;
+}
