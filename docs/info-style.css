@@ -11,7 +11,7 @@ h2
     margin: 0;  
 }
 
-p
+p, li
 {
     font-size: 1.25rem;
 }
@@ -37,7 +37,7 @@ section
 
 #before-you-book ul
 {
-    list-style-image: url('images/gold-star-smallest.png');
+    list-style-image: url('images/smaller-flower.png');
 }
 
 #before-you-book a
@@ -76,25 +76,42 @@ section
 
 #cancellation
 {
-    border: dotted #3c3333 20px;
+    border: dotted #cd5545 20px;
     padding: 30px;
     text-align: center;
-    justify-self: center;
+
 }
 
 #location
 {
-    display: flex;
-    margin: auto;
+    display: grid;
+    grid-template-columns: 20% 38%;
+    justify-content: center;
+    gap: 40px;
 }
 
-.address img
+.location-text
 {
-    transform: rotate(7deg);
-    width: 40%;
+    align-self: center;
+}
+
+.address
+{
+    transform: rotate(-7deg);
+    text-align: center;
 }
 
 
+.taped-paper
+{
+    width: 100%;
+}
+
+.studio-text
+{
+    padding-top: 10%;
+    width: 90%;
+}
 
 .layered {
     display: grid;
