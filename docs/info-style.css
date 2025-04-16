@@ -1,0 +1,107 @@
+/* GENERIC FORMATTING */
+.info-wrapper
+{
+    width: 80%;
+    margin: auto;
+}
+
+h2
+{
+    font-size: 1.5rem;
+    margin: 0;  
+}
+
+p
+{
+    font-size: 1.25rem;
+}
+
+section
+{
+    border-top: 1px black solid;
+    padding: 40px;
+}
+
+/* SECTION FORMATTING */
+
+#before-you-book
+{
+    padding: 20px;
+}
+
+#before-you-book h2
+{
+    padding-left: 20px;
+    margin: 0;
+}
+
+#before-you-book ul
+{
+    list-style-image: url('images/gold-star-smallest.png');
+}
+
+#before-you-book a
+{
+    
+    color: inherit;
+    text-decoration: underline dotted;
+}
+
+#before-you-book a:hover,
+#before-you-book a:focus-visible
+{
+    color: #3e3e3b;
+}
+
+.small-tattoos
+{
+    width: 90%;
+    margin: auto;
+}
+
+#small-tattoos img
+{
+    width: 55%;
+    margin-left: 45%;
+}
+
+.small-tat-text
+{
+    width:55%;
+    padding: 40px;
+    background-color: #c5a599;
+    align-self: center;
+
+}
+
+#cancellation
+{
+    border: dotted #3c3333 20px;
+    padding: 30px;
+    text-align: center;
+    justify-self: center;
+}
+
+#location
+{
+    display: flex;
+    margin: auto;
+}
+
+.address img
+{
+    transform: rotate(7deg);
+    width: 40%;
+}
+
+
+
+.layered {
+    display: grid;
+}
+
+.layered * 
+{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}

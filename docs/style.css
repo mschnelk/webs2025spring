@@ -354,55 +354,21 @@ a:focus-visible
     width: 100%;
 }
 
-.expanded
-{
-    position: fixed;
-    width: 60%;
-
-    
-}
-
-/* INFO PAGE */
-.info-wrapper
-{
-    width: 80%;
-    margin: auto;
-}
-
-.info
-{
-    margin: 20px;
-    padding: 20px;
-    background-color: #a77471;
-    border-radius: 50px;
-    text-align: center;
-}
-
-.info a
-{
-    
-    color: inherit;
-}
-
-.info h2
-{
-    margin: 10px;
-    padding: 0;
-}
 
 
 /* ATTRIBUTIONS */
 .attributions
 {
-    justify-self: center;
-    align-self: center;
-    list-style-image: url('images/gold-star-small.png');
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    list-style-image: url('images/gold-star-smaller.png');
     font-size: 1.25rem;    
 }
 
-.attributions p
+.attributions li
 {
-    padding-bottom: 10px;
+    padding: 5px;
 }
 
 
