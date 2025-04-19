@@ -1,0 +1,34 @@
+/* HOMEPAGE FORMATTING */
+.embellishment
+{
+    margin: auto;
+    width: 60%;
+}
+
+.description
+{
+    margin: 15px;
+}
+
+.centered-column
+{
+    text-align: center;
+    align-self: center;
+}
+
+.vertical-flip
+{
+    transform:rotate(180deg);
+}
+
+/* HOMEPAGE LAYOUT */
+.main-page
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main-page-image
+{
+    width: 100%;
+}

@@ -37,7 +37,7 @@ section
 
 #before-you-book ul
 {
-    list-style-image: url('images/smaller-flower.png');
+    list-style-image: url('../images/smaller-flower.png');
 }
 
 #before-you-book a

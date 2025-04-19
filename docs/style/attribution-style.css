@@ -1,0 +1,27 @@
+
+/* ATTRIBUTIONS */
+.attributions
+{
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    list-style-image: url('../images/gold-star-smaller.png');
+    font-size: 1.25rem;    
+}
+
+.attributions li
+{
+    padding: 5px;
+}
+
+
+.attributions::marker
+{
+    padding:none;
+}
+
+.attributions a
+{
+    text-decoration: underline dotted;
+    color: inherit;
+}

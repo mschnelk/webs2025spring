@@ -1,0 +1,176 @@
+/* GALLERY FORMATTING */
+.filter
+{
+    display: flex;
+    justify-content: center;
+}
+
+.filter button
+{
+    background-color: inherit;
+    font-family: inherit;
+    font-size: .75rem;
+    padding: 0 10px;
+    text-decoration: none;
+    border: none;
+    border-right: 2px solid #1b1a16;
+    cursor: pointer;
+
+    @media (width > 700px)
+    {
+        font-size: 1rem;
+
+        @media(width > 1000px)
+        {
+            font-size: 1.25rem;
+        }
+    }
+}
+
+.filter .current
+{
+    color: #A1392B;
+}
+
+.filter .final
+{
+    border: none;
+}
+
+#load-more
+{
+    justify-self: center;
+    background-color: #a77471;
+    border: 0;
+    margin: 20px;
+    padding: 20px 40px;
+    border-radius: 30px;
+
+    font-family: inherit;
+    font-size: 1rem;
+    color: #e7eff2;
+}
+
+#load-more:hover,
+#load-more:focus-visible
+{
+    cursor: pointer;
+    color: #cbccce; 
+
+}
+
+.gallery-booking
+{
+    display: block;
+    text-align: center;
+    width: 20%;
+    min-width: 150px;
+    margin: 20px auto;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #e7eff2;
+    padding: 15px 20px;
+    border-radius: 60px;
+    background-color: #a77471;
+
+    @media (width > 700px)
+    {
+        font-size: 1.25rem;
+
+        @media(width > 1000px)
+        {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.gallery-booking:hover, 
+.galley-booking:focus-visible
+{
+    color: #cbccce; 
+
+}
+
+.top-star
+{
+    width: 10%;
+    position: absolute;
+    right: 15%;
+    top: 40%;        
+}
+
+.bottom-star
+{
+    width: 10%;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+
+/* TRANSFORMATIONS */
+.rotate-left
+{
+    transform:rotate(-13deg);
+}
+
+.rotate-right
+{
+    transform:rotate(13deg);
+}
+
+/* GALLERY LAYOUT */
+#gallery
+{
+    width: 80%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+#gallery img
+{
+    border: 2px dotted;
+}
+
+#gallery img:nth-child(6n + 1)
+{
+    border-color: #cc6f61;
+}
+
+#gallery img:nth-child(6n + 2)
+{
+    border-color: #c5a599;
+}
+
+#gallery img:nth-child(6n + 3)
+{
+    border-color: #a6a8a9;
+}
+
+#gallery img:nth-child(6n + 4)
+{
+    border-color: #cd5545;
+}
+
+#gallery img:nth-child(6n + 5)
+{
+    border-color: #e7eff2;
+}
+
+#gallery img:nth-child(6n + 6)
+{
+    border-color: #a77471;
+}
+
+.gallery-column
+{
+    display: grid;
+    gap: 10px;
+    align-content: start;
+}
+
+.gallery-column img
+{
+    width: 100%;
+}
