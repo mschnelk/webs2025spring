@@ -107,16 +107,10 @@ section
     width: 100%;
 }
 
-.studio-img
+.studio-text
 {
     padding-top: 10%;
     width: 90%;
-}
-
-.studio-link
-{
-    text-decoration: none;
-    color: inherit;
 }
 
 .layered {

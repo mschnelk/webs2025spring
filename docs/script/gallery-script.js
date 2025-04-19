@@ -4,17 +4,15 @@
   
   let currentIndex = 0;
   const imagesPerLoad = 12;
-  let currentFilter = 'all';
-
-  window.onload = function() {
-    setFilter(getFilterFromURL());
-  };
   
   
   function getFilterFromURL() {
       const params = new URLSearchParams(window.location.search);
       return params.get('filter') || 'all';
     }
+    
+  let currentFilter = getFilterFromURL();
+  setFilter(currentFilter);
   
   
   function getFilteredImages()
@@ -44,7 +42,7 @@
     for (let i = 0; i <  currentIndex; i++)
     {
       let newImage = document.createElement('img');
-      newImage.src = "../images/" + filteredImages[i].url;
+      newImage.src = "images/" + filteredImages[i].url;
       newImage.alt = '';
       columns[i%4].appendChild(newImage);
     }
