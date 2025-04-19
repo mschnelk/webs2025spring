@@ -1,9 +1,8 @@
 # CDM Webpage
 <i>Mia Schnelker</i>
 
-This is a multi-page website created with HTML and CSS, showcasing the artwork of <a href = "https://www.instagram.com/_jackiesque">Jackie</a>, a San Diego-based tattoo artist. 
-
-The main page is located in docs folder, with the title index.html.
+This is a <a href = "mschnelk.github.io/webs2025spring">multi-page website</a> created with HTML and CSS, showcasing the artwork of <a href = "https://www.instagram.com/_jackiesque">Jackie</a>, a San Diego-based tattoo artist. 
+The website was launched using github pages!
 
 ## Updates
 ### March 18, 2025
