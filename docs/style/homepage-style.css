@@ -31,4 +31,8 @@
 .main-page-image
 {
     width: 100%;
+    @media (width < 570px)
+    {
+        visibility: hidden;
+    }
 }

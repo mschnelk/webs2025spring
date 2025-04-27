@@ -3,7 +3,8 @@
 .attributions
 {
     width: 50%;
-    margin: auto;
+    min-width: 300px;
+    margin: 0 auto;
     padding: 20px;
     list-style-image: url('../images/gold-star-smaller.png');
     font-size: 1.25rem;    
