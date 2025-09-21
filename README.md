@@ -4,6 +4,12 @@
 This is a <a href = "https://mschnelk.github.io/webs2025spring/">multi-page website</a> created with HTML and CSS, showcasing the artwork of <a href = "https://www.instagram.com/_jackiesque">Jackie</a>, a San Diego-based tattoo artist. 
 The website was launched using github pages!
 
+## Future Add-ons
+<ul>
+  <li>Better responsive design for access on phones and tablets</li>
+  <li>Backend for uploading/updating images remotely</li>
+</ul>
+
 ## Updates
 ### March 18, 2025
 
